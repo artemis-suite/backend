@@ -1,9 +1,12 @@
 import * as functions from 'firebase-functions';
+import * as admin from 'firebase-admin';
 
 import membersListFunc from "./features/members/list";
 import membersInviteFunc from "./features/members/invite";
 import membersReassignFunc from "./features/members/reassign";
 import membersRemoveFunc from "./features/members/remove";
+
+admin.initializeApp();
 
 //#region [members]
 
